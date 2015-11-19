@@ -1,0 +1,30 @@
+[
+	{
+		"URL": "http://students.washington.edu/sirra/info343/dawg-coffee", 
+		"Title": "Dawg Coffee",
+		"Description":"This was my first attempt at building a modern web page. We were tasked to replicate a site to the best of our abilities via pictures and limited instructions. This is where I learned more about CSS as well as how Bootstrap can be a great asset for scaling a page down to a mobile device.",
+		"Date": "Oct 12, 2015",
+		"Image": "http://localhost:8080/Documents/Info%20343/Personal-Portfolio/images/Dawg-Coffee.png"
+	},
+	{
+		"URL": "http://students.washington.edu/sirra/info343/police-shooting", 
+		"Title": "Mapping Police Shootings",
+		"Description": "PLACEHOLDER",
+		"Date": "Oct 19, 2015",
+		"Image": "http://localhost:8080/Documents/Info%20343/Personal-Portfolio/images/Police-Shootings.png"
+	},
+	{
+		"URL": "http://students.washington.edu/sirra/info343/CRUD-web-application",
+		"Title": "CRUD Product Review",
+		"Description": "PLACEHOLDER",
+		"Date": "Oct 28, 2015",
+		"Image": "http://localhost:8080/Documents/Info%20343/Personal-Portfolio/images/Product-Review.png"
+	},
+	{
+		"URL": "http://students.washington.edu/sirra/info343/Spotify-Challenge",
+		"Title": "Spotify Challenge",
+		"Description": "PLACEHOLDER",
+		"Date": "Nov 9, 2015",
+		"Image": "http://localhost:8080/Documents/Info%20343/Personal-Portfolio/images/Spotify-Challenge.png"
+	}
+]

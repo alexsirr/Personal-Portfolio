@@ -1,0 +1,16 @@
+<div id="main-content-div" >
+	<div class="container">
+	    <div class="row">
+	        <div  ng-repeat="d in data" class="col-xs-6 content-divs" >
+	        	<div class="back">
+	        		<h3><a href={{d.URL}} target="_blank">{{d.Title}}</a></h3>
+	            	<p>{{d.Description}}</p>
+	            	<p>{{d.Date}}</p>
+	        	</div>
+	            <div class="front">
+	            	<img  src={{d.Image}}>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
