@@ -1,3 +1,7 @@
+html {
+    height: 100%
+}
+
 body {
 	background-image: url(http://localhost:8080/Documents/Info%20343/Personal-Portfolio/images/bgsmaller.jpg);
 	background-size: 100%;
@@ -25,7 +29,7 @@ h3 a:not(:hover) {
 #navbar {
 	position:fixed;
 	padding: 0px;
-  	bottom: 30%; 
+  	bottom: 285px; 
 	left: 0; 
 	opacity: .8;
 	background:#0d0d0d;
@@ -36,8 +40,8 @@ h3 a:not(:hover) {
 #navbar ol {
 	list-style-type: none;
 	padding: 0px;
-	margin-top: 150%;
-	margin-bottom: 150%;
+	margin-top: 140px;
+	margin-bottom: 140px;
 }
 
 #navbar li {
@@ -65,8 +69,7 @@ h3 a:not(:hover) {
 }
 
 .content-divs {
-	background: #0d0d0d;
-	opacity: .8;
+	background-color: rgba(13,13,13,0.8);
 	width: 500px;
 	height: 200px;
 	margin-bottom: 50px;
@@ -81,64 +84,171 @@ h3 a:not(:hover) {
 }
 
 #main-content-div {
-	margin-top: 20%;
-	margin-left: 7%;
+	margin-top: 230px;
+	margin-left: 80px;
 }
 
-#main-content-div img {
+.content-divs img {
 	width: 500px;
 	height: 200px;
 	border-radius: 10px;
-	width: 500px;
-	height: 200px;
 }
 
 
 #contact-div {
-	background: #0d0d0d;
+	background-color: rgba(13,13,13,0.8);
 	opacity: .8;
-	margin-bottom: 50px;
 	width: 500px;
 	text-align: center;
 	border-radius: 10px;
-	margin-top: 30%;
-	margin-left: 30%;
+	margin-top: 340px;
+	margin-left: 340px;
 	padding: 15px;
+	font-variant: small-caps;
+}
+
+#contact-div a {
+	color: white;
+}
+
+#about-div {
+	background-color: rgba(13,13,13,0.8);
+	width: 500px;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 340px;
+	margin-left: 340px;
+	padding: 15px;
+}
+
+#circle-img{
+	background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
 }
 
 /*Card Animation Stuff*/
 
 .front, .back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#contact-div {
-	font-variant: small-caps;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .front,
 .back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.5s;
-          transition: transform 0.5s;
+  	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+ 	-webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
 }
 
 .back {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  	-webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 
 .content-divs:hover .front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  	-webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 
 .content-divs:hover .back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  	-webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+@media screen and (max-width: 1200px) {
+	body {
+		background-image: url(http://localhost:8080/Documents/Info%20343/Personal-Portfolio/images/bgskinny.jpg);
+	}
+
+	.content-divs {
+		background: #0d0d0d;
+		opacity: .8;
+		width: 300px;
+		height: 350px;
+		margin-bottom: 50px;
+		text-align: center;
+		border-radius: 10px;
+		margin-right: 50px;
+		padding: 0px;
+	}
+
+	.content-divs img {
+		visibility: hidden;
+	}
+
+	#contact-div {
+		margin-top: 340px;
+		margin-left: 200px;
+	}
+
+	#about-div {
+		margin-top: 340px;
+		margin-left: 200px;
+	}
+
+	.back {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.front{
+		position: none;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.front,
+	.back {
+	  	-webkit-backface-visibility: visible;
+	    backface-visibility: visible;
+	 	-webkit-transition: none;
+	    transition: none;
+	}
+
+	.back {
+	  	-webkit-transform: none;
+	    transform: none;
+	}
+
+	.content-divs:hover .front {
+	  	-webkit-transform: none;
+	    transform: none;
+	}
+
+	.content-divs:hover .back {
+	  	-webkit-transform: none;
+	    transform: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		background-image: url(http://localhost:8080/Documents/Info%20343/Personal-Portfolio/images/bgveryskinny.jpg);
+	}
+
+	#main-content-div {
+	margin-top: 230px;
+	margin-left: 250px;
+	}
+
+	#contact-div {
+		width: 300px;
+	}
+
+	#about-div {
+		width: 300px;
+	}
 }
