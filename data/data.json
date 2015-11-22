@@ -18,7 +18,7 @@
 		"Title": "CRUD Product Review",
 		"Description": "A CRUD app allows a user to create, read, update and delete content on this site and this challenge displayed this by letting users rate a fake product by posting a review. This review can be upvoted and deleted as well.",
 		"Date": "Oct 28, 2015",
-		"Image": "/images/Product-Review.png"
+		"Image": "./images/Product-Review.png"
 	},
 	{
 		"URL": "http://students.washington.edu/sirra/info343/Spotify-Challenge",
